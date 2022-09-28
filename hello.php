@@ -11,7 +11,7 @@
 	<?php
 		print "This is a PHP text";
 		print "Hello World" \n
-		print   \"chars\" are the same \n
+		print  \"chars\" are the same \n
 	?>
 </body>
 </html>

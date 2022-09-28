@@ -54,5 +54,10 @@ print $num;
 print "<br>";
 print $colors[0];
 ?>
+<h2>DATA TYPES</h2>
+<h3>PHP Integers</h3>
+<?php
+
+?>
 </body>
 </html>
