@@ -29,12 +29,10 @@ $num_contacts = $pdo->query('SELECT COUNT(*) FROM contacts')->fetchColumn();
             <tr>
                 <td>#</td>
                 <td>Name</td>
-                <td>ID Number</td>
-                <td>Course</td>
-                <td>Address</td>
-                <td>Birth Date</td>
-                <td>Parents name</td>
-                <td>Contact Number</td>
+                <td>Email</td>
+                <td>Phone</td>
+                <td>Title</td>
+                <td>Created</td>
                 <td></td>
             </tr>
         </thead>
@@ -43,12 +41,10 @@ $num_contacts = $pdo->query('SELECT COUNT(*) FROM contacts')->fetchColumn();
             <tr>
                 <td><?=$contact['id']?></td>
                 <td><?=$contact['name']?></td>
-                <td><?=$contact['idnumber']?></td>
-                <td><?=$contact['course']?></td>
-                <td><?=$contact['address']?></td>
-                <td><?=$contact['birthdate']?></td>
-                <td><?=$contact['parentname']?></td>
-                <td><?=$contact['contactnumber']?></td>
+                <td><?=$contact['email']?></td>
+                <td><?=$contact['phone']?></td>
+                <td><?=$contact['title']?></td>
+                <td><?=$contact['created']?></td>
                 <td class="actions">
                     <a href="update.php?id=<?=$contact['id']?>" class="edit"><i class="fas fa-pen fa-xs"></i></a>
                     <a href="delete.php?id=<?=$contact['id']?>" class="trash"><i class="fas fa-trash fa-xs"></i></a>
@@ -68,3 +64,4 @@ $num_contacts = $pdo->query('SELECT COUNT(*) FROM contacts')->fetchColumn();
 </div>
 
 <?=template_footer()?>
+
